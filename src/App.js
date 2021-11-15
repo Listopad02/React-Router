@@ -1,6 +1,6 @@
 import React, {Component} from 'react'
 import './App.css'
-import {Route, Routes} from 'react-router-dom';
+import {Route, Routes, NavLink} from 'react-router-dom';
 import About from './About/About';
 import Cars from './Cars/Cars';
 
@@ -12,10 +12,13 @@ class App extends Component {
         <nav className="nav">
           <ul>
             <li>
-              <a href="/">Home</a>
+              <NavLink to="/">Home</NavLink>
             </li>
             <li>
-              <a href="/about">About</a>
+              <NavLink to="/about">About</NavLink>
+            </li>
+            <li>
+              <NavLink to="/cars">Cars</NavLink>
             </li>
           </ul>
         </nav>
@@ -23,12 +26,11 @@ class App extends Component {
         <hr/>
 
         <Routes>
-            <Route path="/about" exact element={<h1>About page</h1>} />
+            <Route path="/" exact element={<h1>Home page</h1>} />
+            <Route path="/about" exact element={<About />} />
+            <Route path="/cars" exact element={<Cars />} />
         </Routes>
-        
-
-        <About />
-        <Cars />
+  
       </div>
     );
   }
