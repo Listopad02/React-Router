@@ -1,7 +1,8 @@
 import React, {Component} from 'react'
 import './App.css'
-import About from './About/About'
-import Cars from './Cars/Cars'
+import {Route, Routes} from 'react-router-dom';
+import About from './About/About';
+import Cars from './Cars/Cars';
 
 class App extends Component {
   render() {
@@ -20,8 +21,13 @@ class App extends Component {
         </nav>
 
         <hr/>
-        <About />
 
+        <Routes>
+            <Route path="/about" exact element={<h1>About page</h1>} />
+        </Routes>
+        
+
+        <About />
         <Cars />
       </div>
     );
