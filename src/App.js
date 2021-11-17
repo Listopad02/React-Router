@@ -15,11 +15,7 @@ class App extends Component {
               <NavLink to="/" exact>Home</NavLink>
             </li>
             <li>
-              <NavLink to="{{
-                pathname: '/about',
-                search: '?a=1&b=2',
-                hash: 'wfm-hash'
-              }}" exact>About</NavLink>
+              <NavLink to="/about" exact>About</NavLink>
             </li>
             <li>
               <NavLink to="/cars" exact>Cars</NavLink>
