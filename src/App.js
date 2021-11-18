@@ -3,6 +3,7 @@ import './App.css'
 import {Route, Routes, NavLink} from 'react-router-dom';
 import About from './About/About';
 import Cars from './Cars/Cars';
+import CarDetail from './CarDetail/CarDetail';
 
 class App extends Component {
   render() {
@@ -29,6 +30,7 @@ class App extends Component {
             <Route path="/" exact element={<h1 style={{textAlign: 'center'}}>Home page</h1>} />
             <Route path="/about" exact element={<About />} />
             <Route path="/cars" exact element={<Cars />} />
+            <Route path="/cars/:name" exact element={<CarDetail />} />
         </Routes>
   
       </div>
