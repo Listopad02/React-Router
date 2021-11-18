@@ -26,7 +26,7 @@ class App extends Component {
         <hr/>
 
         <Routes>
-            <Route path="/" exact element={<h1>Home page</h1>} />
+            <Route path="/" exact element={<h1 style={{textAlign: 'center'}}>Home page</h1>} />
             <Route path="/about" exact element={<About />} />
             <Route path="/cars" exact element={<Cars />} />
         </Routes>
