@@ -1,12 +1,10 @@
 import React from 'react';
-import Car from '../Cars/Car/Car';
-import Cars from '../Cars/Cars';
 
 export default class CarDetail extends React.Component {
     render() {
         return (
             <div style={{textAlign: 'center'}}>
-                <h1></h1>
+                <h1>Car</h1>
             </div>
         )
     }
